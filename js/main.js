@@ -25,10 +25,14 @@ How will you test this? */
 
 $(function() {
   var result;
-  $.getJSON("https://httpbin.org/ip?format=json").success( function(data) {
+  $.getJSON("https://httpbin.org/ip?format=json").done( function(data) {
     console.log("Log Result")
     result = JSON.stringify(data);
   }).then(function(result) {
     $('#inner').text(result.origin);
   })
+  const browser = bowser.parse(window.navigator.userAgent);
+  var os = browser.os.name.concat(" ", browser.os.version);
+  $("#ua").text(os);
+  $("#os").text(navigator.userAgent);
 })

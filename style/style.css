@@ -15,7 +15,7 @@
 body {
 	background-color: ;
 	text-align: center;
-    color: red,
+    color: red;
     font-family: '90px LeagueGothic';
 
 }
@@ -46,5 +46,16 @@ body {
     text-decoration: none;
     font: 50px 'LeagueGothicRegular';
     color: red;
+}
+
+
+#browser-info {
+    margin-top: 4px;
+}
+
+.your-browser {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
 }
 
