@@ -34,6 +34,6 @@ $(function() {
   })
   const browser = bowser.parse(window.navigator.userAgent);
   var os = browser.os.name.concat(" ", browser.os.version);
-  $("#ua").text(os);
-  $("#os").text(navigator.userAgent);
+  $("#ua").text(navigator.userAgent);
+  $("#os").text(os);
 })
