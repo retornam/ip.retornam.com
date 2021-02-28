@@ -29,7 +29,8 @@ $(function() {
     console.log("Log Result")
     result = JSON.stringify(data);
   }).then(function(result) {
-    $('#inner').text(result.origin);
+    $('#inner > p').text("IP: " + result.origin);
+    $('#inner > span').text("CIDR: " + result.origin + "/32");
   })
   const browser = bowser.parse(window.navigator.userAgent);
   var os = browser.os.name.concat(" ", browser.os.version);
